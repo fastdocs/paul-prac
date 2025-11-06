@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@theme {
+  --font-*: initial;
+  --font-sans: DMSans-Variable, sans-serif;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@font-face {
+  font-family: "DMSans-Variable";
+  font-style: normal;
+  font-weight: 300 600;
+  src: url("/fonts/DMSans-Variable.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-slate-600);
+}
+
